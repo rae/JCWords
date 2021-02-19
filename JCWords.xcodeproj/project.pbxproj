@@ -13,6 +13,10 @@
 		01725A3925CE1C74008959F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01725A2425CE1C73008959F4 /* ContentView.swift */; };
 		01725A3A25CE1C74008959F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01725A2525CE1C74008959F4 /* Assets.xcassets */; };
 		01725A3B25CE1C74008959F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01725A2525CE1C74008959F4 /* Assets.xcassets */; };
+		01725A4525CE1CA3008959F4 /* Letter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01725A4425CE1CA3008959F4 /* Letter.swift */; };
+		01725A4625CE1CA3008959F4 /* Letter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01725A4425CE1CA3008959F4 /* Letter.swift */; };
+		017EBE4525DE00E40050C108 /* LetterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017EBE4425DE00E40050C108 /* LetterRow.swift */; };
+		017EBE4625DE00E40050C108 /* LetterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017EBE4425DE00E40050C108 /* LetterRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,8 @@
 		01725A3225CE1C74008959F4 /* JCWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01725A3425CE1C74008959F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01725A3525CE1C74008959F4 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		01725A4425CE1CA3008959F4 /* Letter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Letter.swift; sourceTree = "<group>"; };
+		017EBE4425DE00E40050C108 /* LetterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,8 @@
 			children = (
 				01725A2325CE1C73008959F4 /* JCWordsApp.swift */,
 				01725A2425CE1C73008959F4 /* ContentView.swift */,
+				01725A4425CE1CA3008959F4 /* Letter.swift */,
+				017EBE4425DE00E40050C108 /* LetterRow.swift */,
 				01725A2525CE1C74008959F4 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -187,7 +195,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01725A4525CE1CA3008959F4 /* Letter.swift in Sources */,
 				01725A3825CE1C74008959F4 /* ContentView.swift in Sources */,
+				017EBE4525DE00E40050C108 /* LetterRow.swift in Sources */,
 				01725A3625CE1C74008959F4 /* JCWordsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,7 +206,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01725A4625CE1CA3008959F4 /* Letter.swift in Sources */,
 				01725A3925CE1C74008959F4 /* ContentView.swift in Sources */,
+				017EBE4625DE00E40050C108 /* LetterRow.swift in Sources */,
 				01725A3725CE1C74008959F4 /* JCWordsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
