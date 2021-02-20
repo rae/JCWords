@@ -8,27 +8,51 @@
 import SwiftUI
 
 struct LetterRow: View {
+    @Environment(\.horizontalSizeClass) var sizeClass: UserInterfaceSizeClass?
     var word: String
     var body: some View {
         let wordArray = Array(word)
-        let screenSize = UIScreen.main.bounds.size
-            let size = screenSize.width / CGFloat(wordArray.count+1)
-            HStack(alignment: .center, spacing: 4) {
-                ForEach(0..<wordArray.count) { index in
-                    let style: Letter.Style = Letter.Style.allCases.randomElement() ?? .normal
-                    Letter(letter: String(wordArray[index]), style: style, size: size)
+        let wordCountFloat = CGFloat(wordArray.count)
+        let ratio: CGFloat = (sizeClass == .compact) ? 1 : 2
+        let size: CGFloat = ratio*310 / wordCountFloat
+        HStack {
+            ForEach(0..<wordArray.count) { index in
+                let style = LetterStyle.allCases[index % LetterStyle.allCases.count]
+                Letter(
+                    letter: String(wordArray[index]),
+                    style: style,
+                    size: size
+                )
+                if index+1 < wordArray.count{
+                    Spacer(minLength: 0)
                 }
             }
+        }
     }
 }
 
 struct LetterRow_Preview: PreviewProvider {
     static var previews: some View {
-        VStack(alignment: .center, spacing: 0) {
-            LetterRow(word: "TESTING")
-            LetterRow(word: "technologistics")
-            LetterRow(word: "TESTING")
-            LetterRow(word: "TESTING")
+        Group {
+            VStack(alignment: .center, spacing: 0.0) {
+                LetterRow(word: "TESTING")
+                LetterRow(word: "THISISTOOLONG")
+                LetterRow(word: "TESTING")
+                LetterRow(word: "TESTING")
+                LetterRow(word: "CAT")
+            }
+            .padding()
+            .previewDevice("iPad (8th generation)")
+
+            VStack(alignment: .center, spacing: 0.0) {
+                LetterRow(word: "TESTING")
+                LetterRow(word: "THISISTOOLONG")
+                LetterRow(word: "TESTING")
+                LetterRow(word: "TESTING")
+                LetterRow(word: "CAT")
+            }
+            .padding()
+            .previewDevice("iPhone SE (2nd generation)")
         }
     }
 }

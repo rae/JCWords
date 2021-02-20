@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import GameController
 
 @main
 struct JCWordsApp: App {
