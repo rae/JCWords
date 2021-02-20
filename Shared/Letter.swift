@@ -9,19 +9,31 @@ import SwiftUI
 
 struct Letter: View {
     var letter: String
-    var style: LetterStyle = .normal
+    var style: LetterStyle = .correct
     var size: CGFloat = 16
-    var color: Color = .black
+    var color: Color = .primary
     var stroke: CGFloat { size/10.0 }
     var strokeColor: Color = .gray
     var body: some View {
         ZStack {
-            if style.circled {
+            if style.misplaced {
                 Circle()
                     .frame(width: size*0.9, height: size)
                     .foregroundColor(style.circleColor)
             }
-            if !style.isEmpty {
+            if style.isEmpty {
+                RoundedRectangle(cornerRadius: size/6)
+                    .stroke(
+                        strokeColor,
+                        style: StrokeStyle(
+                            lineWidth: stroke,
+                            lineCap: .round,
+                            lineJoin: .miter,
+                            dash: [size/6, size/6]
+                        )
+                    )
+                    .frame(width: size, height: size)
+            } else {
                 RoundedRectangle(cornerRadius: size/6)
                     .stroke(strokeColor, lineWidth: stroke)
                     .frame(width: size, height: size)
@@ -39,13 +51,15 @@ struct Letter: View {
 struct Letter_Preview: PreviewProvider {
     static var previews: some View {
         let scale: CGFloat = 40
-        HStack {
-            Letter(letter: "i", size: scale)
-            Letter(letter: "N", style: .circled, size: scale)
-            Letter(letter: "M", style: .empty, size: scale)
-            Letter(letter: "i", size: scale)
-            Letter(letter: "N", size: scale)
-            Letter(letter: "M", size: scale)
+        SomePreviews {
+            HStack {
+                Letter(letter: "i", size: scale)
+                Letter(letter: "N", style: .misplaced, size: scale)
+                Letter(letter: "M", style: .empty, size: scale)
+                Letter(letter: "i", size: scale)
+                Letter(letter: "N", size: scale)
+                Letter(letter: "M", size: scale)
+            }
         }
     }
 }

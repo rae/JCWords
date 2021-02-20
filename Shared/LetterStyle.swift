@@ -9,23 +9,23 @@ import SwiftUI
 
 enum LetterStyle: CaseIterable {
     case empty
-    case normal
-    case circled
+    case correct
+    case misplaced
     case wrong
     
     var foreground: Color {
         switch self {
         case .empty:
             return .clear
-        case .normal:
-            return .black
-        case .circled:
-            return .red
+        case .correct:
+            return .primary
+        case .misplaced:
+            return .accentColor
         case .wrong:
-            return .red
+            return .gray
         }
     }
-    var circled: Bool { self == .circled }
+    var misplaced: Bool { self == .misplaced }
     var isEmpty: Bool { self == .empty }
-    var circleColor: Color { .black }
+    var circleColor: Color { .secondary }
 }

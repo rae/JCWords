@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct LetterRow: View {
+    /// Use the sizeclass to decide on the size ratio
     @Environment(\.horizontalSizeClass) var sizeClass: UserInterfaceSizeClass?
     var word: String
     var body: some View {
         let wordArray = Array(word)
         let wordCountFloat = CGFloat(wordArray.count)
-        let ratio: CGFloat = (sizeClass == .compact) ? 1 : 2
+        /// The sizde ratio is a workaround for not having superView.bounds, really
+        let ratio: CGFloat = (sizeClass == .compact) ? 0.5 : 1.5
         let size: CGFloat = ratio*310 / wordCountFloat
         HStack {
             ForEach(0..<wordArray.count) { index in
@@ -23,36 +25,26 @@ struct LetterRow: View {
                     style: style,
                     size: size
                 )
-                if index+1 < wordArray.count{
-                    Spacer(minLength: 0)
-                }
+                .padding(ratio*3)
             }
         }
     }
 }
 
 struct LetterRow_Preview: PreviewProvider {
-    static var previews: some View {
-        Group {
+    static var previews: some View { 
+        SomePreviews {
             VStack(alignment: .center, spacing: 0.0) {
-                LetterRow(word: "TESTING")
                 LetterRow(word: "THISISTOOLONG")
+                LetterRow(word: "STRANGEST")
+                LetterRow(word: "STRESSED")
                 LetterRow(word: "TESTING")
-                LetterRow(word: "TESTING")
+                LetterRow(word: "HEARTH")
+                LetterRow(word: "HEART")
+                LetterRow(word: "DOOR")
                 LetterRow(word: "CAT")
+                LetterRow(word: "OX")
             }
-            .padding()
-            .previewDevice("iPad (8th generation)")
-
-            VStack(alignment: .center, spacing: 0.0) {
-                LetterRow(word: "TESTING")
-                LetterRow(word: "THISISTOOLONG")
-                LetterRow(word: "TESTING")
-                LetterRow(word: "TESTING")
-                LetterRow(word: "CAT")
-            }
-            .padding()
-            .previewDevice("iPhone SE (2nd generation)")
         }
     }
 }
