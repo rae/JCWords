@@ -42,11 +42,10 @@ struct Letter: View {
                 .fontWeight(.bold)
                 .font(.custom("Monaco", fixedSize: size))
                 .foregroundColor(style.foreground)
-                .padding(size/8.0)
+                .padding(size/4.0)
         }
     }
 }
-
 
 struct Letter_Preview: PreviewProvider {
     static var previews: some View {

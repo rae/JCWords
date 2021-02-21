@@ -7,23 +7,6 @@
 
 import SwiftUI
 
-struct OutlineButton: ButtonStyle {
-    @Environment(\.horizontalSizeClass) var sizeClass: UserInterfaceSizeClass?
-    func makeBody(configuration: Configuration) -> some View {
-        configuration
-            .label
-            .foregroundColor(configuration.isPressed ? .gray : .accentColor)
-            .font(.title)
-            .padding()
-            .background(
-                RoundedRectangle(
-                    cornerRadius: 8,
-                    style: .continuous
-                ).stroke(Color.accentColor, lineWidth: 3)
-        )
-    }
-}
-
 struct MenuView: View {
     let margin: CGFloat = 200
     @State private var isPlaying = false
@@ -32,15 +15,31 @@ struct MenuView: View {
     @State private var showingInfo = false
     var body: some View {
         NavigationView {
-            VStack(spacing: 24) {
+            VStack(spacing: 18) {
                 NavigationLink(
-                    destination: LetterRow(word: "SPECIAL"),
+                    destination: MockGame()
+                        .navigationBarTitleDisplayMode(.inline),
                     isActive: $isPlaying
                 ) { EmptyView() }
-                Button("Play") { self.isPlaying = true }
-                Button("Scores") { self.showingScores = true }
-                Button("Settings") { self.showingSettings = true }
-                Button("Info") { self.showingInfo = true }
+                MenuItem("Play") { self.isPlaying = true }
+                NavigationLink(
+                    destination: Text("Scores go here")
+                        .navigationBarTitleDisplayMode(.inline),
+                    isActive: $showingScores
+                ) { EmptyView() }
+                MenuItem("Scores") { self.showingScores = true }
+                NavigationLink(
+                    destination: Text("Settings go here")
+                        .navigationBarTitleDisplayMode(.inline),
+                    isActive: $showingSettings
+                ) { EmptyView() }
+                MenuItem("Settings") { self.showingSettings = true }
+                NavigationLink(
+                    destination: Text("Info goes here")
+                        .navigationBarTitleDisplayMode(.inline),
+                    isActive: $showingInfo
+                ) { EmptyView() }
+                MenuItem("Info") { self.showingInfo = true }
                 Spacer()
                 Text("JCWords 0.0\n2021-02-20")
                     .font(.system(.footnote))
@@ -53,6 +52,6 @@ struct MenuView_Previews: PreviewProvider {
     static var previews: some View {
         SomePreviews {
             MenuView()
-        }.buttonStyle(OutlineButton())
+        }
     }
 }

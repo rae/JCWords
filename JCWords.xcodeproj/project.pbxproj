@@ -23,6 +23,12 @@
 		01982A6825E1A4F2009EF6BB /* SomePreviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01982A6625E1A4F2009EF6BB /* SomePreviews.swift */; };
 		01DE431C25E200E900118DC0 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE431B25E200E900118DC0 /* MenuView.swift */; };
 		01DE431D25E200E900118DC0 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE431B25E200E900118DC0 /* MenuView.swift */; };
+		01DE431F25E20B1E00118DC0 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE431E25E20B1E00118DC0 /* MenuItem.swift */; };
+		01DE432025E20B1E00118DC0 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE431E25E20B1E00118DC0 /* MenuItem.swift */; };
+		01DE432225E20B4D00118DC0 /* OutlineButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE432125E20B4D00118DC0 /* OutlineButtonStyle.swift */; };
+		01DE432325E20B4D00118DC0 /* OutlineButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE432125E20B4D00118DC0 /* OutlineButtonStyle.swift */; };
+		01DE432525E20C7800118DC0 /* MockGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE432425E20C7800118DC0 /* MockGame.swift */; };
+		01DE432625E20C7800118DC0 /* MockGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE432425E20C7800118DC0 /* MockGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +45,9 @@
 		0185C17625E0A40500928EE3 /* LetterStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterStyle.swift; sourceTree = "<group>"; };
 		01982A6625E1A4F2009EF6BB /* SomePreviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomePreviews.swift; sourceTree = "<group>"; };
 		01DE431B25E200E900118DC0 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		01DE431E25E20B1E00118DC0 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		01DE432125E20B4D00118DC0 /* OutlineButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineButtonStyle.swift; sourceTree = "<group>"; };
+		01DE432425E20C7800118DC0 /* MockGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,12 +81,15 @@
 		01725A2225CE1C73008959F4 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				01725A2325CE1C73008959F4 /* JCWordsApp.swift */,
 				01725A2425CE1C73008959F4 /* ContentView.swift */,
-				01DE431B25E200E900118DC0 /* MenuView.swift */,
+				01725A2325CE1C73008959F4 /* JCWordsApp.swift */,
 				01725A4425CE1CA3008959F4 /* Letter.swift */,
 				0185C17625E0A40500928EE3 /* LetterStyle.swift */,
 				017EBE4425DE00E40050C108 /* LetterRow.swift */,
+				01DE431E25E20B1E00118DC0 /* MenuItem.swift */,
+				01DE431B25E200E900118DC0 /* MenuView.swift */,
+				01DE432425E20C7800118DC0 /* MockGame.swift */,
+				01DE432125E20B4D00118DC0 /* OutlineButtonStyle.swift */,
 				01982A6625E1A4F2009EF6BB /* SomePreviews.swift */,
 				01725A2525CE1C74008959F4 /* Assets.xcassets */,
 			);
@@ -210,8 +222,11 @@
 				01DE431C25E200E900118DC0 /* MenuView.swift in Sources */,
 				01982A6725E1A4F2009EF6BB /* SomePreviews.swift in Sources */,
 				01725A4525CE1CA3008959F4 /* Letter.swift in Sources */,
+				01DE432525E20C7800118DC0 /* MockGame.swift in Sources */,
 				01725A3825CE1C74008959F4 /* ContentView.swift in Sources */,
+				01DE432225E20B4D00118DC0 /* OutlineButtonStyle.swift in Sources */,
 				017EBE4525DE00E40050C108 /* LetterRow.swift in Sources */,
+				01DE431F25E20B1E00118DC0 /* MenuItem.swift in Sources */,
 				0185C17725E0A40500928EE3 /* LetterStyle.swift in Sources */,
 				01725A3625CE1C74008959F4 /* JCWordsApp.swift in Sources */,
 			);
@@ -224,8 +239,11 @@
 				01DE431D25E200E900118DC0 /* MenuView.swift in Sources */,
 				01982A6825E1A4F2009EF6BB /* SomePreviews.swift in Sources */,
 				01725A4625CE1CA3008959F4 /* Letter.swift in Sources */,
+				01DE432625E20C7800118DC0 /* MockGame.swift in Sources */,
 				01725A3925CE1C74008959F4 /* ContentView.swift in Sources */,
+				01DE432325E20B4D00118DC0 /* OutlineButtonStyle.swift in Sources */,
 				017EBE4625DE00E40050C108 /* LetterRow.swift in Sources */,
+				01DE432025E20B1E00118DC0 /* MenuItem.swift in Sources */,
 				0185C17825E0A40500928EE3 /* LetterStyle.swift in Sources */,
 				01725A3725CE1C74008959F4 /* JCWordsApp.swift in Sources */,
 			);
