@@ -12,7 +12,7 @@ import GameController
 struct JCWordsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MenuView()
         }
     }
 }

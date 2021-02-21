@@ -20,7 +20,7 @@ enum LetterStyle: CaseIterable {
         case .correct:
             return .primary
         case .misplaced:
-            return .accentColor
+            return .primary
         case .wrong:
             return .gray
         }
@@ -28,4 +28,12 @@ enum LetterStyle: CaseIterable {
     var misplaced: Bool { self == .misplaced }
     var isEmpty: Bool { self == .empty }
     var circleColor: Color { .secondary }
+    var strokeColor: Color {
+        switch self {
+        case .misplaced, .wrong:
+            return .clear
+        default:
+            return .gray
+        }
+    }
 }

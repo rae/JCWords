@@ -13,18 +13,18 @@ struct Letter: View {
     var size: CGFloat = 16
     var color: Color = .primary
     var stroke: CGFloat { size/10.0 }
-    var strokeColor: Color = .gray
     var body: some View {
         ZStack {
             if style.misplaced {
-                Circle()
-                    .frame(width: size*0.9, height: size)
+                let radius = size*1.2
+                Ellipse()
+                    .frame(width: radius, height: radius*1.1)
                     .foregroundColor(style.circleColor)
             }
             if style.isEmpty {
                 RoundedRectangle(cornerRadius: size/6)
                     .stroke(
-                        strokeColor,
+                        style.strokeColor,
                         style: StrokeStyle(
                             lineWidth: stroke,
                             lineCap: .round,
@@ -35,7 +35,7 @@ struct Letter: View {
                     .frame(width: size, height: size)
             } else {
                 RoundedRectangle(cornerRadius: size/6)
-                    .stroke(strokeColor, lineWidth: stroke)
+                    .stroke(style.strokeColor, lineWidth: stroke)
                     .frame(width: size, height: size)
             }
             Text(letter)
@@ -57,7 +57,6 @@ struct Letter_Preview: PreviewProvider {
                 Letter(letter: "N", style: .misplaced, size: scale)
                 Letter(letter: "M", style: .empty, size: scale)
                 Letter(letter: "i", size: scale)
-                Letter(letter: "N", size: scale)
                 Letter(letter: "M", size: scale)
             }
         }

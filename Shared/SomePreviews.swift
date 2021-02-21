@@ -17,8 +17,6 @@ struct SomePreviews<Content: View>: View {
     var body: some View {
         Group {
             content
-                .previewLayout(.sizeThatFits)
-            content
             content
                 .preferredColorScheme(.dark)
                 .previewDisplayName("Dark")
