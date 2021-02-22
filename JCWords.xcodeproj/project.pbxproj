@@ -7,31 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		015BFA7925E307EB005C32B3 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015BFA7825E307EB005C32B3 /* Keyboard.swift */; };
+		015BFA7A25E307EB005C32B3 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015BFA7825E307EB005C32B3 /* Keyboard.swift */; };
 		01725A3625CE1C74008959F4 /* JCWordsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01725A2325CE1C73008959F4 /* JCWordsApp.swift */; };
 		01725A3725CE1C74008959F4 /* JCWordsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01725A2325CE1C73008959F4 /* JCWordsApp.swift */; };
 		01725A3825CE1C74008959F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01725A2425CE1C73008959F4 /* ContentView.swift */; };
 		01725A3925CE1C74008959F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01725A2425CE1C73008959F4 /* ContentView.swift */; };
 		01725A3A25CE1C74008959F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01725A2525CE1C74008959F4 /* Assets.xcassets */; };
 		01725A3B25CE1C74008959F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01725A2525CE1C74008959F4 /* Assets.xcassets */; };
-		01725A4525CE1CA3008959F4 /* Letter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01725A4425CE1CA3008959F4 /* Letter.swift */; };
-		01725A4625CE1CA3008959F4 /* Letter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01725A4425CE1CA3008959F4 /* Letter.swift */; };
-		017EBE4525DE00E40050C108 /* LetterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017EBE4425DE00E40050C108 /* LetterRow.swift */; };
-		017EBE4625DE00E40050C108 /* LetterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017EBE4425DE00E40050C108 /* LetterRow.swift */; };
+		01725A4525CE1CA3008959F4 /* LetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01725A4425CE1CA3008959F4 /* LetterView.swift */; };
+		01725A4625CE1CA3008959F4 /* LetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01725A4425CE1CA3008959F4 /* LetterView.swift */; };
+		017EBE4525DE00E40050C108 /* LetterRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017EBE4425DE00E40050C108 /* LetterRowView.swift */; };
+		017EBE4625DE00E40050C108 /* LetterRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017EBE4425DE00E40050C108 /* LetterRowView.swift */; };
 		0185C17725E0A40500928EE3 /* LetterStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0185C17625E0A40500928EE3 /* LetterStyle.swift */; };
 		0185C17825E0A40500928EE3 /* LetterStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0185C17625E0A40500928EE3 /* LetterStyle.swift */; };
 		01982A6725E1A4F2009EF6BB /* SomePreviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01982A6625E1A4F2009EF6BB /* SomePreviews.swift */; };
 		01982A6825E1A4F2009EF6BB /* SomePreviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01982A6625E1A4F2009EF6BB /* SomePreviews.swift */; };
 		01DE431C25E200E900118DC0 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE431B25E200E900118DC0 /* MenuView.swift */; };
 		01DE431D25E200E900118DC0 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE431B25E200E900118DC0 /* MenuView.swift */; };
-		01DE431F25E20B1E00118DC0 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE431E25E20B1E00118DC0 /* MenuItem.swift */; };
-		01DE432025E20B1E00118DC0 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE431E25E20B1E00118DC0 /* MenuItem.swift */; };
+		01DE431F25E20B1E00118DC0 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE431E25E20B1E00118DC0 /* MenuItemView.swift */; };
+		01DE432025E20B1E00118DC0 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE431E25E20B1E00118DC0 /* MenuItemView.swift */; };
 		01DE432225E20B4D00118DC0 /* OutlineButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE432125E20B4D00118DC0 /* OutlineButtonStyle.swift */; };
 		01DE432325E20B4D00118DC0 /* OutlineButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE432125E20B4D00118DC0 /* OutlineButtonStyle.swift */; };
-		01DE432525E20C7800118DC0 /* MockGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE432425E20C7800118DC0 /* MockGame.swift */; };
-		01DE432625E20C7800118DC0 /* MockGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE432425E20C7800118DC0 /* MockGame.swift */; };
+		01DE432525E20C7800118DC0 /* MockGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE432425E20C7800118DC0 /* MockGameView.swift */; };
+		01DE432625E20C7800118DC0 /* MockGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE432425E20C7800118DC0 /* MockGameView.swift */; };
+		01DE432A25E2F19B00118DC0 /* Guesses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE432925E2F19B00118DC0 /* Guesses.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		015BFA7825E307EB005C32B3 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		01725A2325CE1C73008959F4 /* JCWordsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCWordsApp.swift; sourceTree = "<group>"; };
 		01725A2425CE1C73008959F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		01725A2525CE1C74008959F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,14 +44,15 @@
 		01725A3225CE1C74008959F4 /* JCWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01725A3425CE1C74008959F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01725A3525CE1C74008959F4 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		01725A4425CE1CA3008959F4 /* Letter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Letter.swift; sourceTree = "<group>"; };
-		017EBE4425DE00E40050C108 /* LetterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterRow.swift; sourceTree = "<group>"; };
+		01725A4425CE1CA3008959F4 /* LetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterView.swift; sourceTree = "<group>"; };
+		017EBE4425DE00E40050C108 /* LetterRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterRowView.swift; sourceTree = "<group>"; };
 		0185C17625E0A40500928EE3 /* LetterStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterStyle.swift; sourceTree = "<group>"; };
 		01982A6625E1A4F2009EF6BB /* SomePreviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomePreviews.swift; sourceTree = "<group>"; };
 		01DE431B25E200E900118DC0 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
-		01DE431E25E20B1E00118DC0 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		01DE431E25E20B1E00118DC0 /* MenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
 		01DE432125E20B4D00118DC0 /* OutlineButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineButtonStyle.swift; sourceTree = "<group>"; };
-		01DE432425E20C7800118DC0 /* MockGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGame.swift; sourceTree = "<group>"; };
+		01DE432425E20C7800118DC0 /* MockGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGameView.swift; sourceTree = "<group>"; };
+		01DE432925E2F19B00118DC0 /* Guesses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guesses.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,16 +86,11 @@
 		01725A2225CE1C73008959F4 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				01725A2425CE1C73008959F4 /* ContentView.swift */,
+				01DE432825E2EFBF00118DC0 /* Models */,
+				01DE432725E2EEF200118DC0 /* Views */,
 				01725A2325CE1C73008959F4 /* JCWordsApp.swift */,
-				01725A4425CE1CA3008959F4 /* Letter.swift */,
-				0185C17625E0A40500928EE3 /* LetterStyle.swift */,
-				017EBE4425DE00E40050C108 /* LetterRow.swift */,
-				01DE431E25E20B1E00118DC0 /* MenuItem.swift */,
-				01DE431B25E200E900118DC0 /* MenuView.swift */,
-				01DE432425E20C7800118DC0 /* MockGame.swift */,
+				015BFA7825E307EB005C32B3 /* Keyboard.swift */,
 				01DE432125E20B4D00118DC0 /* OutlineButtonStyle.swift */,
-				01982A6625E1A4F2009EF6BB /* SomePreviews.swift */,
 				01725A2525CE1C74008959F4 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -120,6 +120,29 @@
 				01725A3525CE1C74008959F4 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		01DE432725E2EEF200118DC0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				01725A2425CE1C73008959F4 /* ContentView.swift */,
+				01725A4425CE1CA3008959F4 /* LetterView.swift */,
+				017EBE4425DE00E40050C108 /* LetterRowView.swift */,
+				0185C17625E0A40500928EE3 /* LetterStyle.swift */,
+				01DE431E25E20B1E00118DC0 /* MenuItemView.swift */,
+				01DE431B25E200E900118DC0 /* MenuView.swift */,
+				01DE432425E20C7800118DC0 /* MockGameView.swift */,
+				01982A6625E1A4F2009EF6BB /* SomePreviews.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		01DE432825E2EFBF00118DC0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				01DE432925E2F19B00118DC0 /* Guesses.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,13 +244,15 @@
 			files = (
 				01DE431C25E200E900118DC0 /* MenuView.swift in Sources */,
 				01982A6725E1A4F2009EF6BB /* SomePreviews.swift in Sources */,
-				01725A4525CE1CA3008959F4 /* Letter.swift in Sources */,
-				01DE432525E20C7800118DC0 /* MockGame.swift in Sources */,
+				01725A4525CE1CA3008959F4 /* LetterView.swift in Sources */,
+				01DE432525E20C7800118DC0 /* MockGameView.swift in Sources */,
+				01DE432A25E2F19B00118DC0 /* Guesses.swift in Sources */,
 				01725A3825CE1C74008959F4 /* ContentView.swift in Sources */,
 				01DE432225E20B4D00118DC0 /* OutlineButtonStyle.swift in Sources */,
-				017EBE4525DE00E40050C108 /* LetterRow.swift in Sources */,
-				01DE431F25E20B1E00118DC0 /* MenuItem.swift in Sources */,
+				017EBE4525DE00E40050C108 /* LetterRowView.swift in Sources */,
+				01DE431F25E20B1E00118DC0 /* MenuItemView.swift in Sources */,
 				0185C17725E0A40500928EE3 /* LetterStyle.swift in Sources */,
+				015BFA7925E307EB005C32B3 /* Keyboard.swift in Sources */,
 				01725A3625CE1C74008959F4 /* JCWordsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,12 +263,13 @@
 			files = (
 				01DE431D25E200E900118DC0 /* MenuView.swift in Sources */,
 				01982A6825E1A4F2009EF6BB /* SomePreviews.swift in Sources */,
-				01725A4625CE1CA3008959F4 /* Letter.swift in Sources */,
-				01DE432625E20C7800118DC0 /* MockGame.swift in Sources */,
+				01725A4625CE1CA3008959F4 /* LetterView.swift in Sources */,
+				015BFA7A25E307EB005C32B3 /* Keyboard.swift in Sources */,
+				01DE432625E20C7800118DC0 /* MockGameView.swift in Sources */,
 				01725A3925CE1C74008959F4 /* ContentView.swift in Sources */,
 				01DE432325E20B4D00118DC0 /* OutlineButtonStyle.swift in Sources */,
-				017EBE4625DE00E40050C108 /* LetterRow.swift in Sources */,
-				01DE432025E20B1E00118DC0 /* MenuItem.swift in Sources */,
+				017EBE4625DE00E40050C108 /* LetterRowView.swift in Sources */,
+				01DE432025E20B1E00118DC0 /* MenuItemView.swift in Sources */,
 				0185C17825E0A40500928EE3 /* LetterStyle.swift in Sources */,
 				01725A3725CE1C74008959F4 /* JCWordsApp.swift in Sources */,
 			);

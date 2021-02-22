@@ -1,5 +1,5 @@
 //
-//  Letter.swift
+//  LetterView.swift
 //  JCWords
 //
 //  Created by Reid Ellis on 2021-02-05.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Letter: View {
+struct LetterView: View {
     var letter: String
     var style: LetterStyle = .correct
     var size: CGFloat = 16
@@ -52,11 +52,11 @@ struct Letter_Preview: PreviewProvider {
         let scale: CGFloat = 40
         SomePreviews {
             HStack {
-                Letter(letter: "i", size: scale)
-                Letter(letter: "N", style: .misplaced, size: scale)
-                Letter(letter: "M", style: .empty, size: scale)
-                Letter(letter: "i", size: scale)
-                Letter(letter: "M", size: scale)
+                LetterView(letter: "i", size: scale)
+                LetterView(letter: "N", style: .misplaced, size: scale)
+                LetterView(letter: "M", style: .empty, size: scale)
+                LetterView(letter: "i", size: scale)
+                LetterView(letter: "M", size: scale)
             }
         }
     }

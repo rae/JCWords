@@ -1,5 +1,5 @@
 //
-//  LetterRow.swift
+//  LetterRowView.swift
 //  JCWords
 //
 //  Created by Reid Ellis on 2021-02-17.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LetterRow: View {
+struct LetterRowView: View {
     /// Use the sizeclass to decide on the size ratio
     @Environment(\.horizontalSizeClass) var sizeClass: UserInterfaceSizeClass?
     var word: String
@@ -20,7 +20,7 @@ struct LetterRow: View {
         HStack {
             ForEach(0..<wordArray.count) { index in
                 let style = LetterStyle.allCases[index % LetterStyle.allCases.count]
-                Letter(
+                LetterView(
                     letter: String(wordArray[index]),
                     style: style,
                     size: size
@@ -35,15 +35,15 @@ struct LetterRow_Preview: PreviewProvider {
     static var previews: some View { 
         SomePreviews {
             VStack(alignment: .center, spacing: 0.0) {
-                LetterRow(word: "THISISTOOLONG")
-                LetterRow(word: "STRANGEST")
-                LetterRow(word: "STRESSED")
-                LetterRow(word: "TESTING")
-                LetterRow(word: "HEARTH")
-                LetterRow(word: "HEART")
-                LetterRow(word: "DOOR")
-                LetterRow(word: "CAT")
-                LetterRow(word: "OX")
+                LetterRowView(word: "THISISTOOLONG")
+                LetterRowView(word: "STRANGEST")
+                LetterRowView(word: "STRESSED")
+                LetterRowView(word: "TESTING")
+                LetterRowView(word: "HEARTH")
+                LetterRowView(word: "HEART")
+                LetterRowView(word: "DOOR")
+                LetterRowView(word: "CAT")
+                LetterRowView(word: "OX")
             }
         }
     }

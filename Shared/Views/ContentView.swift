@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        LetterRow(word: "TESTING")
+        LetterRowView(word: "TESTING")
             .padding()
             .keyboardType(.alphabet)
             .keyboardShortcut(KeyEquivalent("a"))
