@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct OutlineButtonStyle: ButtonStyle {
+    #if os(iOS)
     @Environment(\.horizontalSizeClass) var sizeClass: UserInterfaceSizeClass?
+    #endif
     func makeBody(configuration: Configuration) -> some View {
         configuration
             .label

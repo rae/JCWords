@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// oh dear, navigationBarTitleDisplayMode is iOS-only?
 struct MenuView: View {
     let margin: CGFloat = 200
     @State private var isPlaying = false
