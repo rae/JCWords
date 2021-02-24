@@ -12,15 +12,18 @@ import UIKit
 struct KeyEventHandling: UIViewRepresentable {
     class KeyView: UIView, UIKeyInput {
         var hasText: Bool { true }
-        func deleteBackward() { }
         override var canBecomeFirstResponder: Bool { true }
 
         func insertText(_ text: String) {
             print(">> text \(text)")
         }
         
+        func deleteBackward() {
+            print(">> backspace")
+        }
+        
     }
-    
+
     func makeUIView(context: Context) -> UIView {
         let view = KeyView()
         DispatchQueue.main.async { view.becomeFirstResponder() }

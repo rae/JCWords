@@ -17,15 +17,18 @@ struct LetterRowView: View {
         /// The sizde ratio is a workaround for not having superView.bounds, really
         let ratio: CGFloat = (sizeClass == .compact) ? 0.5 : 1.5
         let size: CGFloat = ratio*310 / wordCountFloat
-        HStack {
-            ForEach(0..<wordArray.count) { index in
-                let style = LetterStyle.allCases[index % LetterStyle.allCases.count]
-                LetterView(
-                    letter: String(wordArray[index]),
-                    style: style,
-                    size: size
-                )
-                .padding(ratio*3)
+        ZStack {
+            KeyEventHandling()
+            HStack {
+                ForEach(0..<wordArray.count) { index in
+                    let style = LetterStyle.allCases[index % LetterStyle.allCases.count]
+                    LetterView(
+                        letter: String(wordArray[index]),
+                        style: style,
+                        size: size
+                    )
+                    .padding(ratio*3)
+                }
             }
         }
     }
