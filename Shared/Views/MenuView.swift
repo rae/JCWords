@@ -17,6 +17,7 @@ struct MenuView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 18) {
+				#if os(iOS)
                 NavigationLink(
                     destination: MockGameView()
                         .navigationBarTitleDisplayMode(.inline),
@@ -40,6 +41,7 @@ struct MenuView: View {
                         .navigationBarTitleDisplayMode(.inline),
                     isActive: $showingInfo
                 ) { EmptyView() }
+				#endif
                 MenuItemView("Info") { self.showingInfo = true }
                 Spacer()
                 Text("JCWords 0.0\n2021-02-20")
